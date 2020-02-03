@@ -7,15 +7,17 @@
 
       <h3 class = "dashboard_name fas fa-info-circle" > My Info </h3>
 
-
-      <ul>
-        <li>Name: <%= @user.first_name + " " + @user.last_name  %></li>
+  <div class="jumbotron">
+      <ul style="color:white;">
+        <li> Name: <%= @user.first_name + " " + @user.last_name  %></li>
         <li>Phone: <%= @user.phone_number %></li>
         <li>Email: <%= @user.email %></li>
       </ul>
       <%= link_to "Edit my Profile", edit_user_registration_path%>
     </div>
   </div>
+  </div>
+
 <div class="container">
 
 

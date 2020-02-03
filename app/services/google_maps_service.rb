@@ -36,7 +36,7 @@ class GoogleMapsService
 
   def conn(conn_params)
     Faraday.new(url: "https://maps.googleapis.com") do |faraday|
-      faraday.params["key"] = ENV["GOOGLE_PLACES_API_KEY"]
+      faraday.params["key"] = ENV["GOOGLE_KEY"]
       conn_params.each do |key, value|
         faraday.params[key] = "#{value}"
       end

@@ -28,10 +28,7 @@
         <h1>Project Homeless Connect Job Fair</h1> <br>
         <h3>Thu, October 10, 2019
         <br> 9:00 AM – 3:00 PM</h3>
-        <% @events.each do |event| %>
-          <h1><%= link_to "#{event.name}", event_path(event) %></h1>
-          <p><% event.date %></p>
-        <% end %>
+
       </div>
       <div class="flip-card-back">
         <h3>Event Details</h3>
@@ -52,10 +49,7 @@ Denver, CO 80202
         <h2>Community Dinner: A Homelessness Awareness Week Event</h2> <br>
         <h3>Fri, December 6, 2019 <br>
 6:00 PM – 8:30 PM</h3>
-        <% @events.each do |event| %>
-          <h1><%= link_to "#{event.name}", event_path(event) %></h1>
-          <p><%= event.date %></p>
-        <% end %>
+
       </div>
       <div class="flip-card-back">
         <h3>Event Details</h3>
@@ -79,10 +73,7 @@ Fort Collins, CO 80524
       <div class="flip-card-front">
         <h1>Picnic In The Park</h1> <br>
         <h3> Sunday Oct. 13, 2019</h3>
-        <% @events.each do |event| %>
-          <h1><%= link_to "#{event.name}", event_path(event) %></h1>
-          <p><%= event.date %></p>
-        <% end %>
+        
       </div>
       <div class="flip-card-back">
         <h3>Event Details</h3>
