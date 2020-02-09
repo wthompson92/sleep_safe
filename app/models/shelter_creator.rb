@@ -9,6 +9,8 @@ class ShelterCreator
     lat = shelter_data[:geometry][:location][:lat]
     lng = shelter_data[:geometry][:location][:lng]
     place_id = shelter_data[:place_id]
+    # photo = shelter_data[:photos][0][:photo_reference]
+
     Shelter.create(name: name, address: address, phone_number: phone_number, hours: hours, latitude: lat, longitude: lng, zip: zip, place_id: place_id)
   end
 

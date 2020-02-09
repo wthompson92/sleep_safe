@@ -5,17 +5,25 @@
   <span class='site-heading-upper text-primary'><b>Shelters Near You</b></span>
 </h1>
 
-<section class='shelters'>
+<div class="container">
   <% @shelters.each do |shelter| %>
-  <div class = 'shelter'>
-    <h3 class='name'> <%= link_to shelter[:name], shelter_path(shelter) %></h3>
-    <!-- <p class='phone_number'> Phone: <%= shelter[:phone_number]%></p> -->
-    <p class='fas fa-phone-alt' 'phone_number'>  <%= shelter[:phone_number]%></p>
-    <!-- <p class='address'> <%= shelter[:address] %></p>
-  </div> -->
-  <br>
-    <p class='fas fa-map-marker-alt' 'address'> <%= shelter[:address] %></p>
-  </div>
-
+    <div class="intro-text left-0 text-center bg-faded p-4 rounded">
+      <h3><%= link_to shelter[:name], shelter_path(shelter) %> <h3>
+      <wl>
+        <li class='fas fa-phone-alt' 'phone_number'>  <%= shelter[:phone_number]%></li>
+        <li class='address'> <%= shelter[:address] %></li>
+      </wl>
+    </div>
+    <br>
   <% end %>
-</section>
+</div>
+
+
+      <!-- <div class="intro-button mx-auto">
+        <a class="btn btn-primary btn-xl" href=/users/sign_up> Sign Up Today!</a>
+      </div> -->
+
+<!-- <section class='shelters'> -->
+
+
+    <!-- <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="https://blackrockdigital.github.io/startbootstrap-business-casual/img/intro.jpg" alt=""> -->

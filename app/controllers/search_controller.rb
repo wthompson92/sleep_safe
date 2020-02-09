@@ -1,9 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    if not_in_denver?
-      redirect_to root_path, notice: "This demo currently only works for valid Denver zipcodes. Please enter a Denver zipcode. Sorry for the inconvience."
-    elsif valid
+    if valid
     @shelters = Shelter.near(params[:q], search_radius, :order => :distance)
     else
       redirect_to root_path, alert: "Please enter a valid 5 digit zipcode."

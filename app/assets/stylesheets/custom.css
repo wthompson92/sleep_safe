@@ -1,7 +1,7 @@
 body {
   font-family: 'Lora';
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.25))), url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/J9H9WF0/videoblocks-sparkly-light-particles-flickering-on-dark-purple-background-imitating-a-night-sky-full-of-stars_rjoc4ibte_thumbnail-full01.png");
-/*
+  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 50, 0.25))), url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/J9H9WF0/videoblocks-sparkly-light-particles-flickering-on-dark-purple-background-imitating-a-night-sky-full-of-stars_rjoc4ibte_thumbnail-full01.png"); */
+
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.10))), url("https://websitevision.co.uk/uploads/Clients/Projects/Milky%20Way/milky_way_header_2.jpg");
 
   /* background: linear-gradient(rgba(47, 23, 15, 0.65)), url("../img/bg.jpg"); */
@@ -96,7 +96,7 @@ display: inline-block;
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(27, 23, 15, 0.9);
   font-family: 'Raleway';
 }
 
@@ -225,7 +225,7 @@ display: inline-block;
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(27, 23, 15, 0.9);
 }
 
 .text-primary {
@@ -274,6 +274,8 @@ display: inline-block;
   text-align: center;
 }
 
+
+
 .shelter_show{
   text-align: center;
   color: white;
@@ -318,6 +320,11 @@ html, body {
   height: 100%;
 }
 
+.searchresult {
+  width: 40%;
+  height: 10%;
+}
+
 .flexbox {
   background: linear-gradient(155deg, #55c7ed);
   width: 25%;
@@ -357,6 +364,7 @@ html, body {
   transform: rotate(135deg);
   box-shadow: 1px 0 #0091c2;
 }
+
 
 .search > div > input {
   color: white;
@@ -435,7 +443,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 1.0s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }

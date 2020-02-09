@@ -21,7 +21,7 @@ class GoogleMapsService
   def shelters_by_zip_code
     shelter_place_ids = get_place_ids
     shelter_place_ids.map do |id|
-      conn_params = {"placeid": id, "fields": "name,formatted_address,formatted_phone_number,opening_hours,geometry"}
+      conn_params = {"placeid": id, "fields": "name,formatted_address,formatted_phone_number,opening_hours,geometry,photos"}
       detailed_shelter_data = get_json(conn_params, "https://maps.googleapis.com/maps/api/place/details/json?")[:result]
       detailed_shelter_data.merge({place_id: id})
     end
