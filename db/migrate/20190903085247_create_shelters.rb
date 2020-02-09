@@ -7,6 +7,7 @@ class CreateShelters < ActiveRecord::Migration[5.2]
       t.string :city
       t.string :state
       t.string :zip
+      t.string :photo
       t.string :hours
       t.bigint :phone_number
       t.timestamps
