@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_09_12_163913) do
     t.string "city"
     t.string "state"
     t.string "zip"
+    t.string "photo"
     t.string "hours"
     t.string "phone_number"
     t.datetime "created_at", null: false
